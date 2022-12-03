@@ -125,10 +125,10 @@
                     </a></div>
                
                     <div class="col-md-5">
-                        <h5>{{hotels_obj.hotel_name}}</h5>
+                        <h5> <strong>{{hotels_obj.hotel_name}}</strong> </h5>
                         
                         <p>
-                            {{hotels_obj.description|truncatechars:150}}
+                            {{hotels_obj.description|truncatechars:100}}
                         </p>
                         <p>
                             {%for amenitie in hotels_obj.amenities.all %}
