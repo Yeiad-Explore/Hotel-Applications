@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+
+{% block start %}
+
+<div class="container my-3">
+    <h1>- - - - - - - - -</h1>
+    <table class="table table-success table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Hotel</th>
+            <th scope="col">Price</th>
+            <th scope="col">Description</th>
+            <th scope="col">Rooms</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for i in Hotel %}
+          <tr>
+            
+            <td>{{i.hotel_name}}</td>
+            <td>{{i.hotel_price}}</td>
+            <td>{{i.description}}</td>
+            <td>{{i.room_count}}</td>        
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+</div>
+
+
+
+{% endblock %}

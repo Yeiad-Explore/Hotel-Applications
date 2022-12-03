@@ -117,3 +117,12 @@ def register_page(request):
         return redirect('/')
 
     return render(request , 'register.html')
+
+
+def showdata(request):
+    hotel = Hotel.objects.all()
+    print(hotel)
+    data = {'Hotel': hotel}
+    return render(request, 'showdata.html', data)
+
+

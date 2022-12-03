@@ -10,6 +10,8 @@ urlpatterns = [
     path('hotel-detail/<uid>/' , hotel_detail , name="hotel_detail"),
     path('login/', login_page , name='login_page'),
     path('register/', register_page , name='register_page'),
+    path('showdata/', showdata , name='showdata'),
+    
 
 ]
 
